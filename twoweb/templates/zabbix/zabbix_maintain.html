@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/form.html' import render_form %}
+
+{% block content %}
+<h1>zabbix 运维时间设置</h1>
+    <div class="hello-form">
+        {{ render_form(form, action=request.full_path) }}
+    </div>
+{% endblock %}
